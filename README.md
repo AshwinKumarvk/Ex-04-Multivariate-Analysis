@@ -26,17 +26,11 @@ df['Postal Code']=df['Postal Code'].fillna(df['Postal Code'].mode()[0])
 
 df.isnull().sum()
 
-![image](https://user-images.githubusercontent.com/95520655/229963909-7b6653d4-3b6e-4cad-8d02-ca18b4b5ef0d.png)
-
 df.dtypes
-
-![image](https://user-images.githubusercontent.com/95520655/229963965-da15bdc3-a3f3-45da-9287-98bb71e2594a.png)
 
 ## Kurtosis:
 
 df.kurtosis()
-
-![image](https://user-images.githubusercontent.com/95520655/229964022-8709b940-e889-4a2f-9900-77a487f6a70d.png)
 
 ## Scatter plot:
 
@@ -46,14 +40,9 @@ import seaborn as sns
 
 sns.boxplot(df['Sales'],df['Postal Code'])
 
-![image](https://user-images.githubusercontent.com/95520655/229964093-8070b642-2459-454b-a40c-48dc0ac35aae.png)
-
 ## Bar plot:
 
 sns.barplot(x=df["Sales"],y=df["Postal Code"],data=df)
-
-![image](https://user-images.githubusercontent.com/95520655/229964262-6574bc21-0914-4eee-8df0-c09b3784842e.png)
-
 
 ## Bar plot
 
@@ -79,8 +68,6 @@ plt.ylabel=("Sales")
 
 plt.show()
 
-![image](https://user-images.githubusercontent.com/95520655/229964418-f975c097-35d3-4f12-9054-284be7e02043.png)
-
 import pandas as pd
 
 import seaborn as sns import matplotlib.pyplot as plt
@@ -101,13 +88,10 @@ plt.ylabel=("Postal Code")
 
 plt.show()
 
-![image](https://user-images.githubusercontent.com/95520655/229964484-4a9e81f7-9943-44d3-981d-71daba303361.png)
 
 ## Corr:
 
 df.corr()
-
-![image](https://user-images.githubusercontent.com/95520655/229964541-119d182a-da4f-4231-a013-27b9be91618f.png)
 
 ## Heatmap:
 
@@ -128,6 +112,38 @@ print(data)
 hm = sn.heatmap(data = data)
 
 plt.show()
+
+# OUTPUT:
+
+## Null Sum:
+
+![image](https://user-images.githubusercontent.com/95520655/229963909-7b6653d4-3b6e-4cad-8d02-ca18b4b5ef0d.png)
+
+## DataTypes:
+
+![image](https://user-images.githubusercontent.com/95520655/229963965-da15bdc3-a3f3-45da-9287-98bb71e2594a.png)
+
+## Kurtosis:
+
+![image](https://user-images.githubusercontent.com/95520655/229964022-8709b940-e889-4a2f-9900-77a487f6a70d.png)
+
+## Scatter plot:
+
+![image](https://user-images.githubusercontent.com/95520655/229964093-8070b642-2459-454b-a40c-48dc0ac35aae.png)
+
+## Bar plot:
+
+![image](https://user-images.githubusercontent.com/95520655/229964262-6574bc21-0914-4eee-8df0-c09b3784842e.png)
+
+## Bar plot
+
+![image](https://user-images.githubusercontent.com/95520655/229964484-4a9e81f7-9943-44d3-981d-71daba303361.png)
+
+## Corr:
+
+![image](https://user-images.githubusercontent.com/95520655/229964541-119d182a-da4f-4231-a013-27b9be91618f.png)
+
+## Heatmap:
 
 ![image](https://user-images.githubusercontent.com/95520655/229964580-680a7376-5e03-41a2-9fad-d886ff5b7884.png)
 
